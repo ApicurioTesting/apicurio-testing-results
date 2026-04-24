@@ -1,0 +1,70 @@
+2026-04-24 12:14:35,456 WARN  [io.quarkus.config] (main) Unrecognized configuration key "quarkus.operator-sdk.bundle.package-name" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-04-24 12:14:38,156 INFO  [io.quarkiverse.operatorsdk.runtime.OperatorProducer] (main) Quarkus Java Operator SDK extension 7.7.3 (commit: 9bb4746) built on Wed Mar 25 11:49:17 GMT 2026
+2026-04-24 12:14:38,337 INFO  [io.javaoperatorsdk.operator.Operator] (main) Registered reconciler: 'keycloakrealmimportcontroller' for resource: 'class org.keycloak.operator.crds.v2beta1.realmimport.KeycloakRealmImport' for namespace(s): [keycloak22]
+2026-04-24 12:14:38,441 INFO  [io.javaoperatorsdk.operator.Operator] (main) Registered reconciler: 'keycloakcontroller' for resource: 'class org.keycloak.operator.crds.v2beta1.deployment.Keycloak' for namespace(s): [keycloak22]
+2026-04-24 12:14:38,441 INFO  [io.quarkiverse.operatorsdk.runtime.AppEventListener] (main) Starting operator.
+2026-04-24 12:14:38,441 INFO  [io.javaoperatorsdk.operator.Operator] (main) Operator SDK 5.3.2 (commit: a932a3d) built on Wed Mar 25 08:36:21 GMT 2026 starting...
+2026-04-24 12:14:38,441 INFO  [io.javaoperatorsdk.operator.Operator] (main) Client version: 7.5.2
+2026-04-24 12:14:38,446 INFO  [io.javaoperatorsdk.operator.processing.Controller] (Controller Starter for: keycloakrealmimportcontroller) Starting 'keycloakrealmimportcontroller' controller for reconciler: org.keycloak.operator.controllers.KeycloakRealmImportController, resource: org.keycloak.operator.crds.v2beta1.realmimport.KeycloakRealmImport
+2026-04-24 12:14:38,449 INFO  [io.javaoperatorsdk.operator.processing.Controller] (Controller Starter for: keycloakcontroller) Starting 'keycloakcontroller' controller for reconciler: org.keycloak.operator.controllers.KeycloakController, resource: org.keycloak.operator.crds.v2beta1.deployment.Keycloak
+2026-04-24 12:14:38,856 WARN  [io.fabric8.kubernetes.client.dsl.internal.VersionUsageUtils] (InformerWrapper [keycloaks.k8s.keycloak.org/v2beta1] 29) The client is using resource type 'keycloaks' with unstable version 'v2beta1'
+2026-04-24 12:14:38,856 WARN  [io.fabric8.kubernetes.client.dsl.internal.VersionUsageUtils] (InformerWrapper [keycloakrealmimports.k8s.keycloak.org/v2beta1] 28) The client is using resource type 'keycloakrealmimports' with unstable version 'v2beta1'
+2026-04-24 12:14:44,637 INFO  [io.javaoperatorsdk.operator.processing.Controller] (Controller Starter for: keycloakrealmimportcontroller) 'keycloakrealmimportcontroller' controller started
+2026-04-24 12:14:44,641 INFO  [io.javaoperatorsdk.operator.processing.Controller] (Controller Starter for: keycloakcontroller) 'keycloakcontroller' controller started
+2026-04-24 12:14:44,931 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-54) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:14:45,031 INFO  [io.quarkus] (main) keycloak-operator 26.6.1 on JVM (powered by Quarkus 3.33.1) started in 11.876s. Listening on: http://0.0.0.0:8080
+2026-04-24 12:14:45,031 INFO  [io.quarkus] (main) Profile prod activated. 
+2026-04-24 12:14:45,032 INFO  [io.quarkus] (main) Installed features: [cdi, kubernetes, kubernetes-client, openshift-client, operator-sdk, smallrye-context-propagation, smallrye-health, vertx]
+2026-04-24 12:14:45,146 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-54) --- Realm reconciliation finished successfully
+2026-04-24 12:14:55,337 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-87) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:14:55,357 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-87) Job about to start
+2026-04-24 12:14:55,357 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-87) --- Realm reconciliation finished successfully
+2026-04-24 12:15:05,442 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-95) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:15:05,459 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-95) Job about to start
+2026-04-24 12:15:05,460 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-95) --- Realm reconciliation finished successfully
+2026-04-24 12:15:15,463 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-103) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:15:15,478 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-103) Job about to start
+2026-04-24 12:15:15,478 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-103) --- Realm reconciliation finished successfully
+2026-04-24 12:15:25,481 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-111) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:15:25,494 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-111) Job about to start
+2026-04-24 12:15:25,495 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-111) --- Realm reconciliation finished successfully
+2026-04-24 12:15:35,498 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-119) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:15:35,514 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-119) Job about to start
+2026-04-24 12:15:35,515 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-119) --- Realm reconciliation finished successfully
+2026-04-24 12:15:45,518 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-123) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:15:45,537 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-123) Job about to start
+2026-04-24 12:15:45,537 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-123) --- Realm reconciliation finished successfully
+2026-04-24 12:15:55,544 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-125) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:15:55,560 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-125) Job about to start
+2026-04-24 12:15:55,560 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-125) --- Realm reconciliation finished successfully
+2026-04-24 12:16:05,564 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-127) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:05,656 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-127) Job about to start
+2026-04-24 12:16:05,656 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-127) --- Realm reconciliation finished successfully
+2026-04-24 12:16:05,758 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-128) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:05,847 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-128) Job already executed - not recreating
+2026-04-24 12:16:05,848 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-128) Job running
+2026-04-24 12:16:05,848 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-128) --- Realm reconciliation finished successfully
+2026-04-24 12:16:13,373 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-129) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:13,413 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-129) Job already executed - not recreating
+2026-04-24 12:16:13,413 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-129) Job running
+2026-04-24 12:16:13,413 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-129) --- Realm reconciliation finished successfully
+2026-04-24 12:16:23,417 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-130) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:23,436 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-130) Job already executed - not recreating
+2026-04-24 12:16:23,436 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-130) Job running
+2026-04-24 12:16:23,436 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-130) --- Realm reconciliation finished successfully
+2026-04-24 12:16:33,446 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-131) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:33,492 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-131) Job already executed - not recreating
+2026-04-24 12:16:33,492 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-131) Job running
+2026-04-24 12:16:33,493 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-131) --- Realm reconciliation finished successfully
+2026-04-24 12:16:39,550 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-132) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:39,582 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-132) Job already executed - not recreating
+2026-04-24 12:16:39,582 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-132) Job running
+2026-04-24 12:16:39,583 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-132) --- Realm reconciliation finished successfully
+2026-04-24 12:16:40,557 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-133) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:40,577 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-133) Job already executed - not recreating
+2026-04-24 12:16:40,577 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-133) Job running
+2026-04-24 12:16:40,577 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-133) --- Realm reconciliation finished successfully
+2026-04-24 12:16:40,580 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-134) --- Reconciling Keycloak Realm: registry-sso-realm in namespace: keycloak22
+2026-04-24 12:16:40,631 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-134) Job already executed - not recreating
+2026-04-24 12:16:40,631 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-134) Job finished
+2026-04-24 12:16:40,632 INFO  [org.keycloak.operator.controllers.KeycloakRealmImportController] (ReconcilerExecutor-keycloakrealmimportcontroller-134) --- Realm reconciliation finished successfully
