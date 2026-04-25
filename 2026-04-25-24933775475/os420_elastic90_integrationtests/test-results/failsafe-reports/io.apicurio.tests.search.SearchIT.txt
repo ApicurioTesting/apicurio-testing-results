@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: io.apicurio.tests.search.SearchIT
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.93 s <<< FAILURE! -- in io.apicurio.tests.search.SearchIT
+io.apicurio.tests.search.SearchIT.testSearchVersionsByLabels -- Time elapsed: 22.26 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed handle callable: io.apicurio.tests.ApicurioRegistryBaseIT$$Lambda/0x00007f8d24b2f5d8@2ee18aca [org.opentest4j.AssertionFailedError: Expected 1 result when searching by label key:value ==> expected: <1> but was: <0>] ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at io.apicurio.tests.ApicurioRegistryBaseIT.retry(ApicurioRegistryBaseIT.java:388)
+	at io.apicurio.tests.ApicurioRegistryBaseIT.retry(ApicurioRegistryBaseIT.java:363)
+	at io.apicurio.tests.ApicurioRegistryBaseIT.retry(ApicurioRegistryBaseIT.java:348)
+	at io.apicurio.tests.ApicurioRegistryBaseIT.retry(ApicurioRegistryBaseIT.java:334)
+	at io.apicurio.tests.search.SearchIT.testSearchVersionsByLabels(SearchIT.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
