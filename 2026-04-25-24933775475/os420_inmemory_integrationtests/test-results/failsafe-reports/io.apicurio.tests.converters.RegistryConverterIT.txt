@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: io.apicurio.tests.converters.RegistryConverterIT
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.32 s <<< FAILURE! -- in io.apicurio.tests.converters.RegistryConverterIT
+io.apicurio.tests.converters.RegistryConverterIT.testDebeziumEventSerialization -- Time elapsed: 0.497 s <<< ERROR!
+java.lang.RuntimeException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: io.vertx.core.http.HttpClosedException: Connection was closed
+	at io.apicurio.registry.resolver.cache.ERCache.retry(ERCache.java:448)
+	at io.apicurio.registry.resolver.cache.ERCache.performRefresh(ERCache.java:354)
+	at io.apicurio.registry.resolver.cache.ERCache.getValue(ERCache.java:264)
+	at io.apicurio.registry.resolver.cache.ERCache.getByContent(ERCache.java:227)
+	at io.apicurio.registry.resolver.DefaultSchemaResolver.handleAutoCreateArtifact(DefaultSchemaResolver.java:333)
+	at io.apicurio.registry.resolver.DefaultSchemaResolver.getSchemaFromRegistry(DefaultSchemaResolver.java:161)
+	at io.apicurio.registry.resolver.DefaultSchemaResolver.lambda$resolveSchema$0(DefaultSchemaResolver.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at io.apicurio.registry.resolver.DefaultSchemaResolver.resolveSchema(DefaultSchemaResolver.java:95)
+	at io.apicurio.registry.serde.AbstractSerializer.serializeData(AbstractSerializer.java:122)
+	at io.apicurio.registry.serde.kafka.KafkaSerializer.serialize(KafkaSerializer.java:60)
+	at io.apicurio.registry.utils.converter.SerdeBasedConverter.fromConnectData(SerdeBasedConverter.java:98)
+	at io.apicurio.tests.converters.RegistryConverterIT.testDebeziumEventSerialization(RegistryConverterIT.java:464)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: io.vertx.core.http.HttpClosedException: Connection was closed
+	at io.kiota.http.vertx.VertXRequestAdapter.getHttpResponseMessage(VertXRequestAdapter.java:428)
+	at io.kiota.http.vertx.VertXRequestAdapter.send(VertXRequestAdapter.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.apicurio.registry.client.common.RegistryClientRequestAdapterFactory$RetryInvocationHandler.invoke(RegistryClientRequestAdapterFactory.java:182)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.send(Unknown Source)
+	at io.apicurio.registry.rest.client.groups.item.artifacts.ArtifactsRequestBuilder.post(ArtifactsRequestBuilder.java:154)
+	at io.apicurio.registry.resolver.client.RegistryClientFacadeImpl.createSchema(RegistryClientFacadeImpl.java:147)
+	at io.apicurio.registry.resolver.DefaultSchemaResolver.lambda$handleAutoCreateArtifact$4(DefaultSchemaResolver.java:344)
+	at io.apicurio.registry.resolver.cache.ERCache.lambda$performRefresh$6(ERCache.java:355)
+	at io.apicurio.registry.resolver.cache.ERCache.retry(ERCache.java:433)
+	... 15 more
+Caused by: java.util.concurrent.ExecutionException: io.vertx.core.http.HttpClosedException: Connection was closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at io.kiota.http.vertx.VertXRequestAdapter.getHttpResponseMessage(VertXRequestAdapter.java:424)
+	... 25 more
+Caused by: io.vertx.core.http.HttpClosedException: Connection was closed
+
