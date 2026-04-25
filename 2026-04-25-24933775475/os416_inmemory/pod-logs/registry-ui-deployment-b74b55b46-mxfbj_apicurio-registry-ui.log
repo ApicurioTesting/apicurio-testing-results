@@ -1,0 +1,22 @@
+---------------------------------------------
+Performing the Initial Config...
+---------------------------------------------
+Generating application config at: /opt/app-root/src/config.js
+Config successfully writen to file.
+---------------------------------------------
+Patching base hrefs...
+---------------------------------------------
+Updating base href in index.html file at: /opt/app-root/src/index.html
+Successfully updated the base href value.
+---------------------------------------------
+Config Complete. Nginx Server Started.....
+---------------------------------------------
+2026/04/25 15:40:26 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/nginx.conf:67
+nginx: [warn] the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/nginx.conf:67
+10.131.0.2 - - [25/Apr/2026:15:40:26 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
+10.131.0.2 - - [25/Apr/2026:15:40:33 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
+10.131.0.2 - - [25/Apr/2026:15:40:33 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
+10.131.0.2 - - [25/Apr/2026:15:40:43 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
+10.131.0.2 - - [25/Apr/2026:15:40:43 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
+10.131.0.2 - - [25/Apr/2026:15:40:53 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
+10.131.0.2 - - [25/Apr/2026:15:40:53 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.29" "-"
