@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: io.apicurio.tests.search.SearchIT
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.68 s -- in io.apicurio.tests.search.SearchIT
