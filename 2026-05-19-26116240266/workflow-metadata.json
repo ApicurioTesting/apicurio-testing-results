@@ -1,0 +1,546 @@
+{
+  "workflow": {
+    "name": "[Test] Registry Release",
+    "run_id": "26116240266",
+    "run_number": "130",
+    "run_attempt": "1",
+    "workflow_ref": "Apicurio/apicurio-testing/.github/workflows/test-registry-release.yaml@refs/heads/main",
+    "sha": "6780940de53a868fc86f522474396b07a6b9420a",
+    "ref": "refs/heads/main",
+    "repository": "Apicurio/apicurio-testing",
+    "actor": "EricWittmann",
+    "triggering_actor": "EricWittmann",
+    "event_name": "workflow_dispatch"
+  },
+  "inputs": {"releaseVersion":"3.2.4","operatorImage":"brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9-operator:3.2.4-3","appImage":"brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9:3.2.4-5","uiImage":"brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-ui-rhel9:3.2.4-1","testsTag":"3.2.x","isDownstream":"true","skipClusterInstall":"false","smokeOnly":"false","dryRun":""},
+  "environment": {
+    "openshift_version": "4.19",
+    "cluster_name": "ci419",
+    "control_plane_nodes": 3,
+    "compute_nodes": 6,
+    "aws_region": "us-east-1",
+    "keycloak_version": "26.3.1",
+    "rapidast_tag": "development"
+  },
+  "execution": {
+    "started_at": "2026-05-19T18:13:29Z",
+    "completed_at": "2026-05-19T19:39:03Z",
+    "duration_seconds": 5134,
+    "duration_formatted": "01:25:34"
+  },
+  "status": {
+    "overall_result": "unknown"
+  },
+  "jobs": [
+  {
+    "name": "OpenShift 4.16",
+    "id": 76806149676,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-19T18:12:51Z",
+    "completed_at": "2026-05-19T19:00:18Z",
+    "runner_name": "GitHub Actions 1000121223",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "OpenShift 4.20",
+    "id": 76806149696,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T18:12:51Z",
+    "completed_at": "2026-05-19T19:00:17Z",
+    "runner_name": "GitHub Actions 1000121225",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "initialize-globals",
+    "id": 76806149703,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T18:13:28Z",
+    "completed_at": "2026-05-19T18:13:31Z",
+    "runner_name": "GitHub Actions 1000121227",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (strimzi 0.49.1)",
+    "id": 76814886145,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:26:30Z",
+    "completed_at": "2026-05-19T19:30:25Z",
+    "runner_name": "GitHub Actions 1000121458",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (elastic 9.0)",
+    "id": 76814886153,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:06:16Z",
+    "completed_at": "2026-05-19T19:09:08Z",
+    "runner_name": "GitHub Actions 1000121384",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (elastic 9.2)",
+    "id": 76814886245,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:17:38Z",
+    "completed_at": "2026-05-19T19:20:06Z",
+    "runner_name": "GitHub Actions 1000121417",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (mysql 8.0)",
+    "id": 76814886250,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:18:58Z",
+    "completed_at": "2026-05-19T19:19:59Z",
+    "runner_name": "GitHub Actions 1000121425",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (keycloak 22)",
+    "id": 76814886256,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:21:02Z",
+    "completed_at": "2026-05-19T19:24:01Z",
+    "runner_name": "GitHub Actions 1000121436",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (pg 18)",
+    "id": 76814886278,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:20:06Z",
+    "completed_at": "2026-05-19T19:20:50Z",
+    "runner_name": "GitHub Actions 1000121432",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (pg12)",
+    "id": 76814886340,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:19:05Z",
+    "completed_at": "2026-05-19T19:19:52Z",
+    "runner_name": "GitHub Actions 1000121427",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (mysql 8.4)",
+    "id": 76814886346,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:25:17Z",
+    "completed_at": "2026-05-19T19:26:27Z",
+    "runner_name": "GitHub Actions 1000121453",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (in-memory)",
+    "id": 76814886457,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:00:19Z",
+    "completed_at": "2026-05-19T19:12:49Z",
+    "runner_name": "",
+    "runner_group_name": ""
+  },
+  {
+    "name": "Apicurio Registry (keycloak 26)",
+    "id": 76814886531,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:25:04Z",
+    "completed_at": "2026-05-19T19:28:40Z",
+    "runner_name": "GitHub Actions 1000121452",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (strimzi 0.43)",
+    "id": 76814886907,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-19T19:25:58Z",
+    "completed_at": "2026-05-19T19:26:25Z",
+    "runner_name": "GitHub Actions 1000121456",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Apicurio Registry (in-memory) [4.16]",
+    "id": 76814887888,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-19T19:00:20Z",
+    "completed_at": "2026-05-19T19:00:19Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "UI Tests (in mem) [4.16]",
+    "id": 76814888561,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-19T19:00:20Z",
+    "completed_at": "2026-05-19T19:00:20Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Integration Tests (in mem) [4.16]",
+    "id": 76814889175,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-19T19:00:20Z",
+    "completed_at": "2026-05-19T19:00:20Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (inmemory) [4.16]",
+    "id": 76814889947,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-19T19:00:20Z",
+    "completed_at": "2026-05-19T19:00:20Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Integration Tests (elastic 9.0)",
+    "id": 76816462921,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:09:09Z",
+    "completed_at": "2026-05-19T19:12:49Z",
+    "runner_name": "",
+    "runner_group_name": ""
+  },
+  {
+    "name": "Destroy Registry (elastic 9.0)",
+    "id": 76817098680,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:28:35Z",
+    "completed_at": "2026-05-19T19:31:07Z",
+    "runner_name": "GitHub Actions 1000121461",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "UI Tests (in mem)",
+    "id": 76817099794,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:12:49Z",
+    "completed_at": "2026-05-19T19:12:49Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Integration Tests (in mem)",
+    "id": 76817099841,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:12:49Z",
+    "completed_at": "2026-05-19T19:12:49Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (inmemory)",
+    "id": 76817100037,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:29:32Z",
+    "completed_at": "2026-05-19T19:29:40Z",
+    "runner_name": "GitHub Actions 1000121467",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "DAST Scan (in mem)",
+    "id": 76817100168,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:12:50Z",
+    "completed_at": "2026-05-19T19:12:49Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Integration Tests (pg12)",
+    "id": 76818329617,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:19:52Z",
+    "completed_at": "2026-05-19T19:19:52Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (pg12)",
+    "id": 76818329639,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:29:33Z",
+    "completed_at": "2026-05-19T19:30:01Z",
+    "runner_name": "GitHub Actions 1000121468",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "UI Tests (mysql 8.0)",
+    "id": 76818353724,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:20:00Z",
+    "completed_at": "2026-05-19T19:20:00Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Integration Tests (mysql 8.0)",
+    "id": 76818353780,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:20:00Z",
+    "completed_at": "2026-05-19T19:20:00Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (mysql 8.0)",
+    "id": 76818353939,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:29:42Z",
+    "completed_at": "2026-05-19T19:30:09Z",
+    "runner_name": "GitHub Actions 1000121469",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Destroy Registry (elastic 9.2)",
+    "id": 76818373564,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:29:55Z",
+    "completed_at": "2026-05-19T19:31:56Z",
+    "runner_name": "GitHub Actions 1000121470",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Integration Tests (elastic 9.2)",
+    "id": 76818373750,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:20:07Z",
+    "completed_at": "2026-05-19T19:20:07Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "UI Tests (pg18)",
+    "id": 76818508569,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:20:51Z",
+    "completed_at": "2026-05-19T19:20:50Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (pg18)",
+    "id": 76818508762,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:30:04Z",
+    "completed_at": "2026-05-19T19:30:37Z",
+    "runner_name": "GitHub Actions 1000121471",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Integration Tests (pg18)",
+    "id": 76818508957,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:20:51Z",
+    "completed_at": "2026-05-19T19:20:51Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (keycloak 22)",
+    "id": 76819081251,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:30:11Z",
+    "completed_at": "2026-05-19T19:30:40Z",
+    "runner_name": "GitHub Actions 1000121472",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Integration Tests (keycloak 22)",
+    "id": 76819081469,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:24:02Z",
+    "completed_at": "2026-05-19T19:24:02Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "UI Tests (strimzi 0.43)",
+    "id": 76819543067,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:26:26Z",
+    "completed_at": "2026-05-19T19:26:25Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (strimzi 0.43)",
+    "id": 76819543392,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-19T19:30:27Z",
+    "completed_at": "2026-05-19T19:30:34Z",
+    "runner_name": "GitHub Actions 1000121473",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Integration Tests (strimzi 0.43)",
+    "id": 76819543438,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:26:26Z",
+    "completed_at": "2026-05-19T19:26:25Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "UI Tests (mysql 8.4)",
+    "id": 76819548836,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:26:27Z",
+    "completed_at": "2026-05-19T19:26:27Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (mysql 8.4)",
+    "id": 76819549204,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:30:36Z",
+    "completed_at": "2026-05-19T19:31:11Z",
+    "runner_name": "GitHub Actions 1000121474",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Integration Tests (mysql 8.4)",
+    "id": 76819549548,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:26:28Z",
+    "completed_at": "2026-05-19T19:26:27Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Integration Tests (keycloak 26)",
+    "id": 76819947630,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:28:41Z",
+    "completed_at": "2026-05-19T19:28:41Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (keycloak 26)",
+    "id": 76819947727,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:30:39Z",
+    "completed_at": "2026-05-19T19:31:05Z",
+    "runner_name": "GitHub Actions 1000121475",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "DAST Scan (keycloak 26)",
+    "id": 76819948151,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:28:41Z",
+    "completed_at": "2026-05-19T19:28:41Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "UI Tests (strimzi 0.49.1)",
+    "id": 76820258340,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:30:26Z",
+    "completed_at": "2026-05-19T19:30:25Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy Registry (strimzi 0.49.1)",
+    "id": 76820259328,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:30:52Z",
+    "completed_at": "2026-05-19T19:31:23Z",
+    "runner_name": "GitHub Actions 1000121477",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Integration Tests (strimzi 0.49.1)",
+    "id": 76820259509,
+    "status": "completed",
+    "conclusion": "cancelled",
+    "started_at": "2026-05-19T19:30:26Z",
+    "completed_at": "2026-05-19T19:30:26Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Destroy OpenShift 4.16",
+    "id": 76820284440,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-19T19:31:08Z",
+    "completed_at": "2026-05-19T19:31:17Z",
+    "runner_name": "GitHub Actions 1000121478",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Destroy OpenShift 4.20",
+    "id": 76820537302,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T19:32:00Z",
+    "completed_at": "2026-05-19T19:38:39Z",
+    "runner_name": "GitHub Actions 1000121479",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Save Workflow Metadata",
+    "id": 76821746268,
+    "status": "in_progress",
+    "conclusion": null,
+    "started_at": "2026-05-19T19:38:42Z",
+    "completed_at": null,
+    "runner_name": "GitHub Actions 1000121480",
+    "runner_group_name": "GitHub Actions"
+  }
+]
+}
