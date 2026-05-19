@@ -1,0 +1,167 @@
+{
+  "workflow": {
+    "name": "[Wrapper] [Test] Operator Release",
+    "run_id": "26126890284",
+    "run_number": "6",
+    "run_attempt": "1",
+    "workflow_ref": "Apicurio/apicurio-testing/.github/workflows/wrapper-registry-operator.yaml@refs/heads/main",
+    "sha": "6780940de53a868fc86f522474396b07a6b9420a",
+    "ref": "refs/heads/main",
+    "repository": "Apicurio/apicurio-testing",
+    "actor": "apicurio-ci",
+    "triggering_actor": "apicurio-ci",
+    "event_name": "workflow_dispatch"
+  },
+  "inputs": {
+  "version": "3.2.4",
+  "operatorImage": "brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9-operator:3.2.4-3",
+  "appImage": "brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9:3.2.4-5",
+  "uiImage": "brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-ui-rhel9:3.2.4-1",
+  "indexImageOcp416": "registry-proxy.engineering.redhat.com/rh-osbs/iib:1146132",
+  "indexImageOcp420": "registry-proxy.engineering.redhat.com/rh-osbs/iib:1146137",
+  "packageVersion": "3.2.4.r1",
+  "artifactClusterName": "art",
+  "issueNumber": "45",
+  "stepId": "qe-operator-aws"
+},
+  "environment": {
+    "openshift_version": "4.19",
+    "cluster_name": "ci419",
+    "control_plane_nodes": 3,
+    "compute_nodes": 6,
+    "aws_region": "us-east-1",
+    "keycloak_version": "26.3.1",
+    "rapidast_tag": "development"
+  },
+  "execution": {
+    "started_at": "2026-05-19T21:38:37Z",
+    "completed_at": "2026-05-19T23:59:08Z",
+    "duration_seconds": 8431,
+    "duration_formatted": "02:20:31"
+  },
+  "status": {
+    "overall_result": "unknown"
+  },
+  "jobs": [
+  {
+    "name": "Run Operator Tests / Record start time",
+    "id": 76842736320,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:25Z",
+    "completed_at": "2026-05-19T21:38:27Z",
+    "runner_name": "GitHub Actions 1000121520",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Prepare test matrix",
+    "id": 76842749065,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:30Z",
+    "completed_at": "2026-05-19T21:38:32Z",
+    "runner_name": "GitHub Actions 1000121521",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Record start time",
+    "id": 76842763401,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:36Z",
+    "completed_at": "2026-05-19T21:38:39Z",
+    "runner_name": "GitHub Actions 1000121522",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Record start time",
+    "id": 76842763432,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:35Z",
+    "completed_at": "2026-05-19T21:38:38Z",
+    "runner_name": "GitHub Actions 1000121523",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Process inputs",
+    "id": 76842778171,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:41Z",
+    "completed_at": "2026-05-19T21:38:43Z",
+    "runner_name": "GitHub Actions 1000121524",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Process inputs",
+    "id": 76842781462,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:42Z",
+    "completed_at": "2026-05-19T21:38:45Z",
+    "runner_name": "GitHub Actions 1000121525",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Provision cluster / Provision OCP 4.16 cluster ci416ycz",
+    "id": 76842791999,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:46Z",
+    "completed_at": "2026-05-19T22:31:13Z",
+    "runner_name": "GitHub Actions 1000121526",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Provision cluster / Provision OCP 4.20 cluster ci420ycz",
+    "id": 76842797446,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T21:38:48Z",
+    "completed_at": "2026-05-19T22:25:25Z",
+    "runner_name": "GitHub Actions 1000121527",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Operator tests",
+    "id": 76849669002,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-19T22:30:33Z",
+    "completed_at": "2026-05-19T23:53:24Z",
+    "runner_name": "GitHub Actions 1000121627",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Operator tests",
+    "id": 76850467663,
+    "status": "in_progress",
+    "conclusion": null,
+    "started_at": "2026-05-19T22:32:28Z",
+    "completed_at": null,
+    "runner_name": "GitHub Actions 1000121632",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Destroy cluster / Destroy OCP cluster ci420ycz",
+    "id": 76860383458,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-19T23:53:27Z",
+    "completed_at": "2026-05-19T23:58:46Z",
+    "runner_name": "GitHub Actions 1000121712",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Save Workflow Metadata",
+    "id": 76860943154,
+    "status": "in_progress",
+    "conclusion": null,
+    "started_at": "2026-05-19T23:58:49Z",
+    "completed_at": null,
+    "runner_name": "GitHub Actions 1000121713",
+    "runner_group_name": "GitHub Actions"
+  }
+]
+}
