@@ -1,0 +1,26 @@
+---------------------------------------------
+Performing the Initial Config...
+---------------------------------------------
+Generating application config at: /opt/app-root/src/config.js
+Config successfully writen to file.
+---------------------------------------------
+Patching base hrefs...
+---------------------------------------------
+Updating base href in index.html file at: /opt/app-root/src/index.html
+Error writing the index.html file: [Error: EACCES: permission denied, open '/opt/app-root/src/index.html'] {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/opt/app-root/src/index.html'
+}
+---------------------------------------------
+Config Complete. Nginx Server Started.....
+---------------------------------------------
+2026/05/20 01:06:55 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/nginx.conf:67
+nginx: [warn] the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/nginx.conf:67
+10.131.2.2 - - [20/May/2026:01:06:57 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.33" "-"
+10.131.2.2 - - [20/May/2026:01:07:05 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.33" "-"
+10.131.2.2 - - [20/May/2026:01:07:07 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.33" "-"
+10.131.2.2 - - [20/May/2026:01:07:15 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.33" "-"
+10.131.2.2 - - [20/May/2026:01:07:17 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.33" "-"
+10.131.2.2 - - [20/May/2026:01:07:25 +0000] "GET /config.js HTTP/1.1" 200 168 "-" "kube-probe/1.33" "-"
