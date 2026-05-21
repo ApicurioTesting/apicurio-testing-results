@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<OWASPZAPReport programName="ZAP" version="2.16.1" generated="Thu, 21 May 2026 14:07:10">
+	
+		<site name="http://registry-app-inmemory.apps.ci420.apicurio-testing.org" host="registry-app-inmemory.apps.ci420.apicurio-testing.org" port="80" ssl="false">
+			<alerts>
+				
+			</alerts>
+		</site>
+	
+</OWASPZAPReport>
