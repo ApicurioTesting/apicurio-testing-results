@@ -1,0 +1,556 @@
+{
+  "workflow": {
+    "name": "[Wrapper] [Test] Registry Release",
+    "run_id": "26634148316",
+    "run_number": "19",
+    "run_attempt": "1",
+    "workflow_ref": "ApicurioTesting/apicurio-testing/.github/workflows/wrapper-registry-release.yaml@refs/heads/main",
+    "sha": "45eafa55b7bfe9ea1c6b727b2c4a98e55beacbaa",
+    "ref": "refs/heads/main",
+    "repository": "ApicurioTesting/apicurio-testing",
+    "actor": "apicurio-ci",
+    "triggering_actor": "apicurio-ci",
+    "event_name": "workflow_dispatch"
+  },
+  "inputs": {"releaseVersion":"3.2.4.GA","operatorImage":"brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9-operator:3.2.4-4","appImage":"brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9:3.2.4-6","uiImage":"brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-ui-rhel9:3.2.4-2","testsTag":"3.2.4.GA","isDownstream":"true","skipClusterInstall":"false","smokeOnly":"true","dryRun":"false"},
+  "environment": {
+    "openshift_version": "4.19",
+    "cluster_name": "ci419",
+    "control_plane_nodes": 3,
+    "compute_nodes": 6,
+    "aws_region": "us-east-1",
+    "keycloak_version": "26.3.1",
+    "rapidast_tag": "development"
+  },
+  "execution": {
+    "started_at": "2026-05-29T11:16:10Z",
+    "completed_at": "2026-05-29T12:21:05Z",
+    "duration_seconds": 3895,
+    "duration_formatted": "01:04:55"
+  },
+  "status": {
+    "overall_result": "unknown"
+  },
+  "jobs": [
+  {
+    "name": "Run QE Registry Tests / Validate Secrets",
+    "id": 78490064617,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-29T11:16:09Z",
+    "completed_at": "2026-05-29T11:16:13Z",
+    "runner_name": "GitHub Actions 1000000228",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / initialize-globals",
+    "id": 78490064621,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-29T11:16:09Z",
+    "completed_at": "2026-05-29T11:16:11Z",
+    "runner_name": "GitHub Actions 1000000229",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / OpenShift 4.20",
+    "id": 78490080647,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-29T11:16:16Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": "GitHub Actions 1000000230",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / OpenShift 4.16",
+    "id": 78490081284,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (strimzi 0.43)",
+    "id": 78490081691,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (in-memory) [4.16]",
+    "id": 78490081885,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (strimzi 0.43)",
+    "id": 78490082034,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (strimzi 0.43)",
+    "id": 78490082048,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (in mem) [4.16]",
+    "id": 78490082205,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (in mem) [4.16]",
+    "id": 78490082459,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (inmemory) [4.16]",
+    "id": 78490082471,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:14Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (strimzi 0.43)",
+    "id": 78490082860,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:15Z",
+    "completed_at": "2026-05-29T11:16:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy OpenShift 4.16",
+    "id": 78490084652,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T11:16:15Z",
+    "completed_at": "2026-05-29T11:16:15Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (pg 18)",
+    "id": 78496875288,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-29T12:03:17Z",
+    "completed_at": "2026-05-29T12:14:31Z",
+    "runner_name": "GitHub Actions 1000000231",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (in-memory)",
+    "id": 78496875293,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-05-29T12:03:16Z",
+    "completed_at": "2026-05-29T12:13:54Z",
+    "runner_name": "GitHub Actions 1000000232",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (mysql 8.4)",
+    "id": 78496875755,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:13Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (strimzi 0.49.1)",
+    "id": 78496875786,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:13Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (keycloak 22)",
+    "id": 78496875893,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (pg12)",
+    "id": 78496875895,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (elastic 9.0)",
+    "id": 78496875914,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (keycloak 26)",
+    "id": 78496875920,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (elastic 9.2)",
+    "id": 78496876060,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (strimzi 0.49.1)",
+    "id": 78496876061,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Apicurio Registry (mysql 8.0)",
+    "id": 78496876069,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (mysql 8.0)",
+    "id": 78496876233,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (elastic 9.2)",
+    "id": 78496876242,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (keycloak 22)",
+    "id": 78496876244,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (mysql 8.4)",
+    "id": 78496876266,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (keycloak 26)",
+    "id": 78496876360,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (elastic 9.2)",
+    "id": 78496876398,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (pg12)",
+    "id": 78496876435,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (mysql 8.4)",
+    "id": 78496876443,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (strimzi 0.49.1)",
+    "id": 78496876468,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (mysql 8.0)",
+    "id": 78496876498,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (elastic 9.0)",
+    "id": 78496876534,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (keycloak 22)",
+    "id": 78496876557,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (pg12)",
+    "id": 78496876587,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (elastic 9.0)",
+    "id": 78496876595,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / DAST Scan (keycloak 26)",
+    "id": 78496876763,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:13Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (keycloak 26)",
+    "id": 78496876950,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (mysql 8.4)",
+    "id": 78496877042,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (strimzi 0.49.1)",
+    "id": 78496877051,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (mysql 8.0)",
+    "id": 78496877348,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:03:14Z",
+    "completed_at": "2026-05-29T12:03:14Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (in mem)",
+    "id": 78498408922,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:13:54Z",
+    "completed_at": "2026-05-29T12:13:54Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (in mem)",
+    "id": 78498409161,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:13:54Z",
+    "completed_at": "2026-05-29T12:13:54Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (inmemory)",
+    "id": 78498409468,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-29T12:13:57Z",
+    "completed_at": "2026-05-29T12:14:11Z",
+    "runner_name": "GitHub Actions 1000000233",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / DAST Scan (in mem)",
+    "id": 78498409537,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:13:54Z",
+    "completed_at": "2026-05-29T12:13:54Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / UI Tests (pg18)",
+    "id": 78498493620,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:14:31Z",
+    "completed_at": "2026-05-29T12:14:31Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy Registry (pg18)",
+    "id": 78498493926,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-29T12:14:34Z",
+    "completed_at": "2026-05-29T12:14:54Z",
+    "runner_name": "GitHub Actions 1000000236",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / Integration Tests (pg18)",
+    "id": 78498494084,
+    "status": "completed",
+    "conclusion": "skipped",
+    "started_at": "2026-05-29T12:14:31Z",
+    "completed_at": "2026-05-29T12:14:31Z",
+    "runner_name": null,
+    "runner_group_name": null
+  },
+  {
+    "name": "Run QE Registry Tests / Destroy OpenShift 4.20",
+    "id": 78498546411,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-05-29T12:14:57Z",
+    "completed_at": "2026-05-29T12:20:37Z",
+    "runner_name": "GitHub Actions 1000000237",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run QE Registry Tests / Save Workflow Metadata",
+    "id": 78499365526,
+    "status": "in_progress",
+    "conclusion": null,
+    "started_at": "2026-05-29T12:20:40Z",
+    "completed_at": null,
+    "runner_name": "GitHub Actions 1000000241",
+    "runner_group_name": "GitHub Actions"
+  }
+]
+}
