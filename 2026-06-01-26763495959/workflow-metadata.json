@@ -34,10 +34,10 @@
     "rapidast_tag": "development"
   },
   "execution": {
-    "started_at": "2026-06-01T15:08:22Z",
-    "completed_at": "2026-06-01T16:01:35Z",
-    "duration_seconds": 3193,
-    "duration_formatted": "00:53:13"
+    "started_at": "2026-06-01T15:08:08Z",
+    "completed_at": "2026-06-01T16:02:24Z",
+    "duration_seconds": 3256,
+    "duration_formatted": "00:54:16"
   },
   "status": {
     "overall_result": "unknown"
@@ -186,11 +186,21 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.20 / Save Workflow Metadata",
     "id": 78893862585,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-06-01T16:01:14Z",
+    "completed_at": "2026-06-01T16:01:53Z",
+    "runner_name": "GitHub Actions 1000000370",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Save Workflow Metadata",
+    "id": 78894000592,
     "status": "in_progress",
     "conclusion": null,
-    "started_at": "2026-06-01T16:01:14Z",
+    "started_at": "2026-06-01T16:01:56Z",
     "completed_at": null,
-    "runner_name": "GitHub Actions 1000000370",
+    "runner_name": "GitHub Actions 1000000371",
     "runner_group_name": "GitHub Actions"
   }
 ]
