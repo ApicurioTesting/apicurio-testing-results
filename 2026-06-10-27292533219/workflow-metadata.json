@@ -35,9 +35,9 @@
   },
   "execution": {
     "started_at": "2026-06-10T17:06:22Z",
-    "completed_at": "2026-06-10T19:16:16Z",
-    "duration_seconds": 7794,
-    "duration_formatted": "02:09:54"
+    "completed_at": "2026-06-10T19:45:54Z",
+    "duration_seconds": 9572,
+    "duration_formatted": "02:39:32"
   },
   "status": {
     "overall_result": "unknown"
@@ -146,10 +146,10 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.20 / Operator tests",
     "id": 80626086337,
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "failure",
     "started_at": "2026-06-10T17:52:20Z",
-    "completed_at": null,
+    "completed_at": "2026-06-10T19:25:36Z",
     "runner_name": "GitHub Actions 1000000847",
     "runner_group_name": "GitHub Actions"
   },
@@ -166,11 +166,31 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.16 / Save Workflow Metadata",
     "id": 80643173378,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-06-10T19:15:54Z",
+    "completed_at": "2026-06-10T19:16:21Z",
+    "runner_name": "GitHub Actions 1000000849",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Destroy cluster / Destroy OCP cluster ci420n9i",
+    "id": 80645097324,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-06-10T19:25:39Z",
+    "completed_at": "2026-06-10T19:45:27Z",
+    "runner_name": "GitHub Actions 1000000857",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Save Workflow Metadata",
+    "id": 80648971132,
     "status": "in_progress",
     "conclusion": null,
-    "started_at": "2026-06-10T19:15:54Z",
+    "started_at": "2026-06-10T19:45:30Z",
     "completed_at": null,
-    "runner_name": "GitHub Actions 1000000849",
+    "runner_name": "GitHub Actions 1000000859",
     "runner_group_name": "GitHub Actions"
   }
 ]
