@@ -34,10 +34,10 @@
     "rapidast_tag": "development"
   },
   "execution": {
-    "started_at": "2026-06-15T16:10:28Z",
-    "completed_at": "2026-06-15T19:34:41Z",
-    "duration_seconds": 12253,
-    "duration_formatted": "03:24:13"
+    "started_at": "2026-06-15T16:10:27Z",
+    "completed_at": "2026-06-15T19:35:18Z",
+    "duration_seconds": 12291,
+    "duration_formatted": "03:24:51"
   },
   "status": {
     "overall_result": "unknown"
@@ -166,21 +166,31 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.16 / Destroy cluster / Destroy OCP cluster ci416pju",
     "id": 81507199341,
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "success",
     "started_at": "2026-06-15T19:29:33Z",
-    "completed_at": null,
+    "completed_at": "2026-06-15T19:34:46Z",
     "runner_name": "GitHub Actions 1000001231",
     "runner_group_name": "GitHub Actions"
   },
   {
     "name": "Run Operator Tests / Test on OCP 4.20 / Save Workflow Metadata",
     "id": 81508111406,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-06-15T19:34:15Z",
+    "completed_at": "2026-06-15T19:34:49Z",
+    "runner_name": "GitHub Actions 1000001232",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Save Workflow Metadata",
+    "id": 81508217925,
     "status": "in_progress",
     "conclusion": null,
-    "started_at": "2026-06-15T19:34:15Z",
+    "started_at": "2026-06-15T19:34:56Z",
     "completed_at": null,
-    "runner_name": "GitHub Actions 1000001232",
+    "runner_name": "GitHub Actions 1000001233",
     "runner_group_name": "GitHub Actions"
   }
 ]
