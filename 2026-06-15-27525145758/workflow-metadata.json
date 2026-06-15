@@ -34,10 +34,10 @@
     "rapidast_tag": "development"
   },
   "execution": {
-    "started_at": "2026-06-15T05:03:31Z",
-    "completed_at": "2026-06-15T08:37:02Z",
-    "duration_seconds": 12811,
-    "duration_formatted": "03:33:31"
+    "started_at": "2026-06-15T05:03:37Z",
+    "completed_at": "2026-06-15T08:45:19Z",
+    "duration_seconds": 13302,
+    "duration_formatted": "03:41:42"
   },
   "status": {
     "overall_result": "unknown"
@@ -146,10 +146,10 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.16 / Operator tests",
     "id": 81365872489,
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "failure",
     "started_at": "2026-06-15T07:12:45Z",
-    "completed_at": null,
+    "completed_at": "2026-06-15T08:39:48Z",
     "runner_name": "GitHub Actions 1000001140",
     "runner_group_name": "GitHub Actions"
   },
@@ -166,11 +166,31 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.20 / Save Workflow Metadata",
     "id": 81379412260,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-06-15T08:36:39Z",
+    "completed_at": "2026-06-15T08:37:06Z",
+    "runner_name": "GitHub Actions 1000001158",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Destroy cluster / Destroy OCP cluster ci416iyd",
+    "id": 81379963498,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-06-15T08:39:51Z",
+    "completed_at": "2026-06-15T08:44:46Z",
+    "runner_name": "GitHub Actions 1000001164",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.16 / Save Workflow Metadata",
+    "id": 81380795466,
     "status": "in_progress",
     "conclusion": null,
-    "started_at": "2026-06-15T08:36:39Z",
+    "started_at": "2026-06-15T08:44:49Z",
     "completed_at": null,
-    "runner_name": "GitHub Actions 1000001158",
+    "runner_name": "GitHub Actions 1000001165",
     "runner_group_name": "GitHub Actions"
   }
 ]
