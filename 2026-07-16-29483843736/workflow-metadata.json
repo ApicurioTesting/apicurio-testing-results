@@ -34,10 +34,10 @@
     "rapidast_tag": "development"
   },
   "execution": {
-    "started_at": "2026-07-16T08:33:17Z",
-    "completed_at": "2026-07-16T10:49:35Z",
-    "duration_seconds": 8178,
-    "duration_formatted": "02:16:18"
+    "started_at": "2026-07-16T08:33:19Z",
+    "completed_at": "2026-07-16T12:04:24Z",
+    "duration_seconds": 12665,
+    "duration_formatted": "03:31:05"
   },
   "status": {
     "overall_result": "unknown"
@@ -146,10 +146,10 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.20 / Operator tests",
     "id": 87596574385,
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "success",
     "started_at": "2026-07-16T10:28:03Z",
-    "completed_at": null,
+    "completed_at": "2026-07-16T11:57:34Z",
     "runner_name": "GitHub Actions 1000001939",
     "runner_group_name": "GitHub Actions"
   },
@@ -166,11 +166,31 @@
   {
     "name": "Run Operator Tests / Test on OCP 4.16 / Save Workflow Metadata",
     "id": 87600676072,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-07-16T10:49:13Z",
+    "completed_at": "2026-07-16T10:49:42Z",
+    "runner_name": "GitHub Actions 1000001941",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Destroy cluster / Destroy OCP cluster ci420ylz",
+    "id": 87614020346,
+    "status": "completed",
+    "conclusion": "success",
+    "started_at": "2026-07-16T11:57:37Z",
+    "completed_at": "2026-07-16T12:03:49Z",
+    "runner_name": "GitHub Actions 1000001947",
+    "runner_group_name": "GitHub Actions"
+  },
+  {
+    "name": "Run Operator Tests / Test on OCP 4.20 / Save Workflow Metadata",
+    "id": 87615290604,
     "status": "in_progress",
     "conclusion": null,
-    "started_at": "2026-07-16T10:49:13Z",
+    "started_at": "2026-07-16T12:03:53Z",
     "completed_at": null,
-    "runner_name": "GitHub Actions 1000001941",
+    "runner_name": "GitHub Actions 1000001948",
     "runner_group_name": "GitHub Actions"
   }
 ]
