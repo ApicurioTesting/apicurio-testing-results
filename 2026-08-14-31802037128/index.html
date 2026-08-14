@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Test] Registry Release - Results - 2026-05-21-26226671916</title>
+    <title>[Wrapper] [Test] Registry Release - Results - 2026-08-14-31802037128</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -485,22 +485,22 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>[Test] Registry Release - Results</h1>
-            <div class="subtitle">Run #133 by EricWittmann | 2026-05-21</div>
+            <h1>[Wrapper] [Test] Registry Release - Results</h1>
+            <div class="subtitle">Run #26 by apicurio-ci | 2026-08-14</div>
         </div>
         <div class="metadata-section">
             <div class="metadata-grid">
                 <div class="metadata-item">
                     <div class="metadata-label">Actor</div>
-                    <div class="metadata-value">EricWittmann</div>
+                    <div class="metadata-value">apicurio-ci</div>
                 </div>
                 <div class="metadata-item">
                     <div class="metadata-label">Started At</div>
-                    <div class="metadata-value">2026-05-21 12:44:01 UTC</div>
+                    <div class="metadata-value">2026-08-14 12:50:32 UTC</div>
                 </div>
                 <div class="metadata-item">
                     <div class="metadata-label">Duration</div>
-                    <div class="metadata-value">01:33:12</div>
+                    <div class="metadata-value">01:27:42</div>
                 </div>
             </div>
             <div class="inputs-section">
@@ -515,23 +515,27 @@
                     <tbody>
                         <tr>
                             <td class="input-name">Releaseversion</td>
-                            <td class="input-value">3.2.4</td>
+                            <td class="input-value">3.3.1</td>
                         </tr>
                         <tr>
                             <td class="input-name">Operatorimage</td>
-                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9-operator:3.2.4-3</td>
+                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9-operator:3.3.1-3</td>
                         </tr>
                         <tr>
                             <td class="input-name">Appimage</td>
-                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9:3.2.4-5</td>
+                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-rhel9:3.3.1-4</td>
                         </tr>
                         <tr>
                             <td class="input-name">Uiimage</td>
-                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-ui-rhel9:3.2.4-1</td>
+                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-ui-rhel9:3.3.1-3</td>
                         </tr>
                         <tr>
-                            <td class="input-name">Teststag</td>
-                            <td class="input-value">3.2.x</td>
+                            <td class="input-name">Gitopsimage</td>
+                            <td class="input-value">brew.registry.redhat.io/rh-osbs/apicurio-apicurio-registry-gitops-sync-rhel9:3.3.1-4</td>
+                        </tr>
+                        <tr>
+                            <td class="input-name">Testsref</td>
+                            <td class="input-value">3.3.1-testing</td>
                         </tr>
                         <tr>
                             <td class="input-name">Isdownstream</td>
@@ -547,7 +551,7 @@
                         </tr>
                         <tr>
                             <td class="input-name">Dryrun</td>
-                            <td class="input-value"></td>
+                            <td class="input-value">false</td>
                         </tr>
                     </tbody>
                 </table>
@@ -558,15 +562,15 @@
                     <div class="timeline-stats">
                         <div class="stat-item">
                             <span>Total:</span>
-                            <span><strong>52</strong></span>
+                            <span><strong>53</strong></span>
                         </div>
                         <div class="stat-item stat-success">
                             <span>✓</span>
-                            <span><strong>51</strong></span>
+                            <span><strong>49</strong></span>
                         </div>
                         <div class="stat-item stat-failure">
                             <span>✗</span>
-                            <span><strong>0</strong></span>
+                            <span><strong>3</strong></span>
                         </div>
                         <div class="stat-item stat-other">
                             <span>○</span>
@@ -577,364 +581,371 @@
                 </div>
                 <div class="jobs-list" id="jobs-list">
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Validate Secrets</div>
+                        <div class="job-timeline-name">Resolve Tests Ref</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">2s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Validate Secrets</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">3s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">initialize-globals</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / initialize-globals</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">4s</span>
+                            <span style="font-size: 0.8em; color: #666;">3s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">OpenShift 4.16</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / OpenShift 4.20</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">47m 11s</span>
+                            <span style="font-size: 0.8em; color: #666;">48m 50s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">OpenShift 4.20</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / OpenShift 4.16</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">46m 9s</span>
+                            <span style="font-size: 0.8em; color: #666;">45m 54s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (pg 18)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (strimzi 0.43)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 1s</span>
+                            <span style="font-size: 0.8em; color: #666;">3m 47s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (pg12)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (in-memory) [4.16]</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 2s</span>
+                            <span style="font-size: 0.8em; color: #666;">1m 8s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (keycloak 22)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">3m 40s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (keycloak 26)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">4m 15s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (in-memory)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 22s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (mysql 8.0)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 27s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (strimzi 0.49.1)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">4m 24s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (mysql 8.4)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 27s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (elastic 9.0)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">3m 28s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (elastic 9.2)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">3m 18s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (strimzi 0.43)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">4m 16s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Apicurio Registry (in-memory) [4.16]</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 27s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (pg18)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (in mem) [4.16]</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">1m 50s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (pg12)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (keycloak 26)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">27m 47s</span>
+                            <span style="font-size: 0.8em; color: #666;">4m 50s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (in mem)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (strimzi 0.49.1)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 29s</span>
+                            <span style="font-size: 0.8em; color: #666;">4m 20s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (mysql 8.4)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (mysql 8.0)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 35s</span>
+                            <span style="font-size: 0.8em; color: #666;">1m 46s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (mysql 8.0)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (keycloak 22)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">4m 9s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (mysql 8.4)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 15s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (elastic 9.0)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">4m 7s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (elastic 9.2)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">4m 8s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (pg 18)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 39s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (pg12)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">57s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Apicurio Registry (in-memory)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 28s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (in mem) [4.16]</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">19m 27s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (strimzi 0.43)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 38s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (pg12)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">12m 0s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (mysql 8.4)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">2m 8s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (in mem)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 44s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (pg18)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 27s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (mysql 8.0)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">1m 52s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (strimzi 0.43)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">15m 26s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (pg18)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">15m 30s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (in mem)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">21m 10s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (mysql 8.4)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">15m 59s</span>
+                            <span class="job-timeline-status job-status-failure">failure</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (mysql 8.0)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">14m 29s</span>
+                            <span class="job-timeline-status job-status-failure">failure</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (elastic 9.0)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">9m 43s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (elastic 9.2)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">13m 44s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (keycloak 22)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">10m 41s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / UI Tests (strimzi 0.49.1)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">1m 37s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (in mem) [4.16]</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (keycloak 26)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 35s</span>
+                            <span style="font-size: 0.8em; color: #666;">9m 35s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (pg18)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Integration Tests (strimzi 0.49.1)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">29m 48s</span>
+                            <span style="font-size: 0.8em; color: #666;">16m 17s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (in mem)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (pg12)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">30m 11s</span>
+                            <span style="font-size: 0.8em; color: #666;">38s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (mysql 8.4)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (elastic 9.0)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">29m 41s</span>
+                            <span style="font-size: 0.8em; color: #666;">1m 42s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (mysql 8.0)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / DAST Scan (keycloak 26)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">26m 20s</span>
+                            <span style="font-size: 0.8em; color: #666;">7m 3s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (elastic 9.2)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (keycloak 22)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">23m 46s</span>
+                            <span style="font-size: 0.8em; color: #666;">35s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (elastic 9.0)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (elastic 9.2)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">23m 39s</span>
+                            <span style="font-size: 0.8em; color: #666;">2m 3s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (keycloak 22)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">23m 5s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (keycloak 26)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">22m 29s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (in mem) [4.16]</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">28m 28s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (strimzi 0.49.1)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 22s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">UI Tests (strimzi 0.43)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 53s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (strimzi 0.49.1)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">28m 42s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Integration Tests (strimzi 0.43)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">27m 35s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">DAST Scan (keycloak 26)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">5m 55s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (keycloak 22)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">33s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (elastic 9.0)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">1m 17s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (elastic 9.2)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">2m 44s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (pg12)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">31s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (mysql 8.0)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (strimzi 0.43)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">29s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (keycloak 26)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (mysql 8.0)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">34s</span>
+                            <span class="job-timeline-status job-status-success">success</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (pg18)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">32s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (pg18)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (mysql 8.4)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">27s</span>
+                            <span style="font-size: 0.8em; color: #666;">33s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (mysql 8.4)</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">27s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (inmemory) [4.16]</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (inmemory) [4.16]</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">23s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">DAST Scan (in mem)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy OpenShift 4.16</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">6m 30s</span>
+                            <span style="font-size: 0.8em; color: #666;">7m 4s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (strimzi 0.49.1)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (keycloak 26)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">30s</span>
+                            <span style="font-size: 0.8em; color: #666;">33s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (strimzi 0.43)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (strimzi 0.49.1)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">46s</span>
+                            <span style="font-size: 0.8em; color: #666;">32s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy OpenShift 4.16</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / DAST Scan (in mem)</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">5m 18s</span>
+                            <span style="font-size: 0.8em; color: #666;">6m 35s</span>
+                            <span class="job-timeline-status job-status-failure">failure</span>
+                        </div>
+                    </div>
+                    <div class="job-timeline-item">
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy Registry (inmemory)</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.8em; color: #666;">28s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy Registry (inmemory)</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Destroy OpenShift 4.20</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">27s</span>
+                            <span style="font-size: 0.8em; color: #666;">6m 36s</span>
                             <span class="job-timeline-status job-status-success">success</span>
                         </div>
                     </div>
                     <div class="job-timeline-item">
-                        <div class="job-timeline-name">Destroy OpenShift 4.20</div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 0.8em; color: #666;">6m 8s</span>
-                            <span class="job-timeline-status job-status-success">success</span>
-                        </div>
-                    </div>
-                    <div class="job-timeline-item">
-                        <div class="job-timeline-name">Save Workflow Metadata</div>
+                        <div class="job-timeline-name">Run QE Registry Tests / Save Workflow Metadata</div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="font-size: 0.8em; color: #666;">Unknown</span>
                             <span class="job-timeline-status job-status-in_progress">in progress</span>
@@ -956,8 +967,8 @@
                 <div class="card-number">2</div>
                 <div class="card-label">Security Scan Jobs</div>
             </div>
-            <div class="card success">
-                <div class="card-number">880/892</div>
+            <div class="card danger">
+                <div class="card-number">995/1010</div>
                 <div class="card-label">Integration Tests Passed</div>
             </div>
             <div class="card success">
@@ -1007,7 +1018,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SimpleAuthIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (16.4s)
+                                        8/8 passed (18.7s)
                                     </span>
                                 </div>
 
@@ -1050,7 +1061,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SearchIT</span>
                                     <span class="suite-stats passed">
-                                        7/7 passed (39.2s)
+                                        7/7 passed (37.5s)
                                     </span>
                                 </div>
 
@@ -1069,11 +1080,11 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">125</div>
+                                    <div class="test-stat-number total">140</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">123</div>
+                                    <div class="test-stat-number passed">138</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1093,119 +1104,126 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SerdesPerformanceIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (9.7s)
+                                        6/6 passed (6.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AgentCardIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (10.1s)
+                                        6/6 passed (7.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (45.2s)
+                                        13/13 passed (35.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (4.4s)
+                                        2/2 passed (3.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (28.9s)
+                                        9/9 passed (6.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ProtobufSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        17/17 passed (69.4s)
+                                        17/17 passed (61.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroNatsSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (4.1s)
+                                        1/1 passed (2.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (1.0s)
+                                        1/1 passed (0.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (45.6s)
+                                        11/11 passed (36.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">JsonSchemaSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (30.3s)
+                                        6/6 passed (26.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (13.1s)
+                                        5/5 passed (9.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (21.5s)
+                                        9/9 passed (18.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RegistryConverterIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (12.5s)
+                                        10/10 passed (14.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroPulsarSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (29.5s)
+                                        1/1 passed (19.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">BasicConfluentSerDesIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (55.1s)
+                                        8/8 passed (44.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (2.0s)
+                                        1/1 passed (0.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        19/21 passed (121.6s)
+                                        19/21 passed (97.5s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (12.9s)
                                     </span>
                                 </div>
 
@@ -1224,11 +1242,11 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">125</div>
+                                    <div class="test-stat-number total">140</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">123</div>
+                                    <div class="test-stat-number passed">138</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1248,105 +1266,105 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SerdesPerformanceIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (5.1s)
+                                        6/6 passed (6.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AgentCardIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (7.3s)
+                                        6/6 passed (7.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (34.3s)
+                                        13/13 passed (34.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (3.1s)
+                                        2/2 passed (3.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (2.6s)
+                                        9/9 passed (3.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ProtobufSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        17/17 passed (60.4s)
+                                        17/17 passed (61.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroNatsSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (1.9s)
+                                        1/1 passed (2.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.1s)
+                                        1/1 passed (0.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (32.1s)
+                                        11/11 passed (35.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">JsonSchemaSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (26.3s)
+                                        6/6 passed (27.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (8.5s)
+                                        5/5 passed (8.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (17.5s)
+                                        9/9 passed (17.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RegistryConverterIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (12.9s)
+                                        10/10 passed (15.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroPulsarSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (19.5s)
+                                        1/1 passed (20.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">BasicConfluentSerDesIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (43.2s)
+                                        8/8 passed (43.9s)
                                     </span>
                                 </div>
 
@@ -1360,7 +1378,14 @@
                                 <div class="suite-item">
                                     <span class="suite-name">AvroSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        19/21 passed (98.7s)
+                                        19/21 passed (97.5s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (12.1s)
                                     </span>
                                 </div>
 
@@ -1379,11 +1404,11 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">56</div>
+                                    <div class="test-stat-number total">70</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">56</div>
+                                    <div class="test-stat-number passed">70</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1403,63 +1428,70 @@
                                 <div class="suite-item">
                                     <span class="suite-name">AgentCardIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (20.0s)
+                                        6/6 passed (21.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (38.0s)
+                                        13/13 passed (35.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (3.5s)
+                                        2/2 passed (3.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (11.0s)
+                                        9/9 passed (4.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.7s)
+                                        1/1 passed (0.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (37.9s)
+                                        11/11 passed (39.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (10.1s)
+                                        5/5 passed (8.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (18.7s)
+                                        9/9 passed (17.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.9s)
+                                        1/1 passed (0.4s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (12.2s)
                                     </span>
                                 </div>
 
@@ -1478,11 +1510,11 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">125</div>
+                                    <div class="test-stat-number total">140</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">123</div>
+                                    <div class="test-stat-number passed">138</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1502,7 +1534,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SerdesPerformanceIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (6.1s)
+                                        6/6 passed (7.1s)
                                     </span>
                                 </div>
 
@@ -1516,7 +1548,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (36.9s)
+                                        13/13 passed (36.5s)
                                     </span>
                                 </div>
 
@@ -1530,14 +1562,14 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (10.8s)
+                                        9/9 passed (8.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ProtobufSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        17/17 passed (62.8s)
+                                        17/17 passed (63.6s)
                                     </span>
                                 </div>
 
@@ -1551,21 +1583,21 @@
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.5s)
+                                        1/1 passed (0.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (35.9s)
+                                        11/11 passed (38.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">JsonSchemaSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (27.2s)
+                                        6/6 passed (27.6s)
                                     </span>
                                 </div>
 
@@ -1579,42 +1611,49 @@
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (18.7s)
+                                        9/9 passed (18.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RegistryConverterIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (12.9s)
+                                        10/10 passed (15.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroPulsarSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (20.5s)
+                                        1/1 passed (21.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">BasicConfluentSerDesIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (46.0s)
+                                        8/8 passed (46.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.8s)
+                                        1/1 passed (0.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        19/21 passed (100.8s)
+                                        19/21 passed (101.0s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (13.1s)
                                     </span>
                                 </div>
 
@@ -1657,7 +1696,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SimpleAuthIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (14.8s)
+                                        8/8 passed (15.5s)
                                     </span>
                                 </div>
 
@@ -1700,7 +1739,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SearchIT</span>
                                     <span class="suite-stats passed">
-                                        7/7 passed (38.1s)
+                                        7/7 passed (39.0s)
                                     </span>
                                 </div>
 
@@ -1714,20 +1753,20 @@
                                 <div class="job-title">os420_mysql80_integrationtests</div>
                                 <div class="job-config">Integration Tests on OpenShift 4.20 with MySQL</div>
                             </div>
-                            <span class="status-badge status-passed">passed</span>
+                            <span class="status-badge status-failed">failed</span>
                         </div>
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">56</div>
+                                    <div class="test-stat-number total">70</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">56</div>
+                                    <div class="test-stat-number passed">68</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number failed">0</div>
+                                    <div class="test-stat-number failed">2</div>
                                     <div class="test-stat-label">Failed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1741,65 +1780,72 @@
                             <div class="suite-list">
 
                                 <div class="suite-item">
-                                    <span class="suite-name">AgentCardIT</span>
-                                    <span class="suite-stats passed">
-                                        6/6 passed (18.5s)
+                                    <span class="suite-name"><a href="os420_mysql80_integrationtests/test-results/failsafe-reports/io.apicurio.tests.smokeTests.apicurio.AgentCardIT.txt" target="_blank" title="View raw test output">AgentCardIT</a></span>
+                                    <span class="suite-stats failed">
+                                        5/6 passed (19.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
-                                    <span class="suite-name">ArtifactsIT</span>
-                                    <span class="suite-stats passed">
-                                        13/13 passed (45.1s)
+                                    <span class="suite-name"><a href="os420_mysql80_integrationtests/test-results/failsafe-reports/io.apicurio.tests.smokeTests.apicurio.ArtifactsIT.txt" target="_blank" title="View raw test output">ArtifactsIT</a></span>
+                                    <span class="suite-stats failed">
+                                        12/13 passed (41.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (4.2s)
+                                        2/2 passed (3.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (27.7s)
+                                        9/9 passed (19.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (1.1s)
+                                        1/1 passed (0.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (47.2s)
+                                        11/11 passed (48.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (13.3s)
+                                        5/5 passed (11.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (21.7s)
+                                        9/9 passed (20.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (2.0s)
+                                        1/1 passed (1.5s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (14.9s)
                                     </span>
                                 </div>
 
@@ -1813,20 +1859,20 @@
                                 <div class="job-title">os420_mysql84_integrationtests</div>
                                 <div class="job-config">Integration Tests on OpenShift 4.20 with MySQL</div>
                             </div>
-                            <span class="status-badge status-passed">passed</span>
+                            <span class="status-badge status-failed">failed</span>
                         </div>
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">125</div>
+                                    <div class="test-stat-number total">140</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">123</div>
+                                    <div class="test-stat-number passed">137</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number failed">0</div>
+                                    <div class="test-stat-number failed">1</div>
                                     <div class="test-stat-label">Failed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1842,119 +1888,126 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SerdesPerformanceIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (5.4s)
+                                        6/6 passed (6.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AgentCardIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (7.6s)
+                                        6/6 passed (8.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (35.0s)
+                                        13/13 passed (37.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (3.3s)
+                                        2/2 passed (3.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (4.4s)
+                                        9/9 passed (11.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ProtobufSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        17/17 passed (61.3s)
+                                        17/17 passed (62.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroNatsSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (2.0s)
+                                        1/1 passed (2.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.2s)
+                                        1/1 passed (0.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (33.3s)
+                                        11/11 passed (40.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">JsonSchemaSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (26.6s)
+                                        6/6 passed (26.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (8.8s)
+                                        5/5 passed (10.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (17.9s)
+                                        9/9 passed (18.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RegistryConverterIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (13.2s)
+                                        10/10 passed (12.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
-                                    <span class="suite-name">AvroPulsarSerdeIT</span>
-                                    <span class="suite-stats passed">
-                                        1/1 passed (19.6s)
+                                    <span class="suite-name"><a href="os420_mysql84_integrationtests/test-results/failsafe-reports/io.apicurio.tests.serdes.apicurio.pulsar.AvroPulsarSerdeIT.txt" target="_blank" title="View raw test output">AvroPulsarSerdeIT</a></span>
+                                    <span class="suite-stats failed">
+                                        0/1 passed (21.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">BasicConfluentSerDesIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (43.5s)
+                                        8/8 passed (46.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.3s)
+                                        1/1 passed (1.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        19/21 passed (97.1s)
+                                        19/21 passed (104.9s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (13.8s)
                                     </span>
                                 </div>
 
@@ -1973,11 +2026,11 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">125</div>
+                                    <div class="test-stat-number total">140</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">123</div>
+                                    <div class="test-stat-number passed">138</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
@@ -1997,119 +2050,126 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SerdesPerformanceIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (12.3s)
+                                        6/6 passed (7.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AgentCardIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (9.8s)
+                                        6/6 passed (7.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (43.4s)
+                                        13/13 passed (36.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (4.2s)
+                                        2/2 passed (3.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (23.7s)
+                                        9/9 passed (7.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ProtobufSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        17/17 passed (67.6s)
+                                        17/17 passed (62.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroNatsSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (11.2s)
+                                        1/1 passed (2.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.8s)
+                                        1/1 passed (0.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (43.1s)
+                                        11/11 passed (37.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">JsonSchemaSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (28.9s)
+                                        6/6 passed (27.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (12.6s)
+                                        5/5 passed (9.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (20.9s)
+                                        9/9 passed (18.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RegistryConverterIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (15.3s)
+                                        10/10 passed (14.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroPulsarSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (22.1s)
+                                        1/1 passed (21.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">BasicConfluentSerDesIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (51.4s)
+                                        8/8 passed (45.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (1.7s)
+                                        1/1 passed (0.5s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        19/21 passed (108.8s)
+                                        19/21 passed (98.6s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (13.2s)
                                     </span>
                                 </div>
 
@@ -2128,11 +2188,11 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">125</div>
+                                    <div class="test-stat-number total">140</div>
                                     <div class="test-stat-label">Total</div>
                                 </div>
                                 <div class="test-stat">
-                                    <div class="test-stat-number passed">123</div>
+                                    <div class="test-stat-number passed">138</div>
                                     <div class="test-stat-label">Passed</div>
                                 </div>
                                 <div class="test-stat">
@@ -2152,119 +2212,126 @@
                                 <div class="suite-item">
                                     <span class="suite-name">SerdesPerformanceIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (5.0s)
+                                        6/6 passed (8.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AgentCardIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (7.3s)
+                                        6/6 passed (8.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ArtifactsIT</span>
                                     <span class="suite-stats passed">
-                                        13/13 passed (33.7s)
+                                        13/13 passed (40.7s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataIT</span>
                                     <span class="suite-stats passed">
-                                        2/2 passed (3.3s)
+                                        2/2 passed (3.8s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">SchemasConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (2.4s)
+                                        9/9 passed (17.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ProtobufSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        17/17 passed (60.4s)
+                                        17/17 passed (65.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroNatsSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (1.9s)
+                                        1/1 passed (3.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">MetadataConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.1s)
+                                        1/1 passed (0.6s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AllArtifactTypesIT</span>
                                     <span class="suite-stats passed">
-                                        10/10 passed (31.6s)
+                                        11/11 passed (43.0s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">JsonSchemaSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        6/6 passed (26.4s)
+                                        6/6 passed (27.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceIT</span>
                                     <span class="suite-stats passed">
-                                        5/5 passed (8.4s)
+                                        5/5 passed (11.2s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">ReferenceGraphIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (17.4s)
+                                        9/9 passed (19.9s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RegistryConverterIT</span>
                                     <span class="suite-stats passed">
-                                        9/9 passed (12.1s)
+                                        10/10 passed (13.1s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroPulsarSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (19.6s)
+                                        1/1 passed (23.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">BasicConfluentSerDesIT</span>
                                     <span class="suite-stats passed">
-                                        8/8 passed (43.2s)
+                                        8/8 passed (48.4s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">RulesResourceConfluentIT</span>
                                     <span class="suite-stats passed">
-                                        1/1 passed (0.2s)
+                                        1/1 passed (1.3s)
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">AvroSerdeIT</span>
                                     <span class="suite-stats passed">
-                                        19/21 passed (101.0s)
+                                        19/21 passed (107.3s)
+                                    </span>
+                                </div>
+
+                                <div class="suite-item">
+                                    <span class="suite-name">OdcsContractIT</span>
+                                    <span class="suite-stats passed">
+                                        13/13 passed (13.9s)
                                     </span>
                                 </div>
 
@@ -2321,7 +2388,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 43.1s
+                                <strong>Total Duration:</strong> 28.8s
                             </div>
 
                             <div class="suite-list">
@@ -2333,56 +2400,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (2.87s) - chromium
+                                        passed (2.71s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (2.57s) - chromium
+                                        passed (1.45s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (3.62s) - chromium
+                                        passed (2.54s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (3.62s) - chromium
+                                        passed (2.62s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (2.68s) - chromium
+                                        passed (2.00s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (2.75s) - chromium
+                                        passed (1.70s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (2.42s) - chromium
+                                        passed (1.51s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (2.43s) - chromium
+                                        passed (1.31s) - chromium
                                     </span>
                                 </div>
 
@@ -2393,28 +2460,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (2.23s) - chromium
+                                        passed (1.18s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (2.42s) - chromium
+                                        passed (1.47s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (2.35s) - chromium
+                                        passed (1.52s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (2.39s) - chromium
+                                        passed (1.47s) - chromium
                                     </span>
                                 </div>
 
@@ -2425,7 +2492,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (1.88s) - chromium
+                                        passed (1.01s) - chromium
                                     </span>
                                 </div>
 
@@ -2436,7 +2503,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (3.97s) - chromium
+                                        passed (2.73s) - chromium
                                     </span>
                                 </div>
 
@@ -2447,7 +2514,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (2.27s) - chromium
+                                        passed (1.61s) - chromium
                                     </span>
                                 </div>
 
@@ -2458,7 +2525,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (1.49s) - chromium
+                                        passed (0.96s) - chromium
                                     </span>
                                 </div>
 
@@ -2509,7 +2576,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 24.8s
+                                <strong>Total Duration:</strong> 44.6s
                             </div>
 
                             <div class="suite-list">
@@ -2521,56 +2588,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.66s) - chromium
+                                        passed (3.17s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.40s) - chromium
+                                        passed (2.51s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (2.43s) - chromium
+                                        passed (3.44s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (2.20s) - chromium
+                                        passed (3.37s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.31s) - chromium
+                                        passed (2.47s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (1.54s) - chromium
+                                        passed (3.19s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (1.23s) - chromium
+                                        passed (2.35s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.08s) - chromium
+                                        passed (2.32s) - chromium
                                     </span>
                                 </div>
 
@@ -2581,28 +2648,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.20s) - chromium
+                                        passed (2.41s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.27s) - chromium
+                                        passed (2.69s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.33s) - chromium
+                                        passed (2.76s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.25s) - chromium
+                                        passed (2.62s) - chromium
                                     </span>
                                 </div>
 
@@ -2613,7 +2680,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (0.95s) - chromium
+                                        passed (1.74s) - chromium
                                     </span>
                                 </div>
 
@@ -2624,7 +2691,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (2.79s) - chromium
+                                        passed (4.77s) - chromium
                                     </span>
                                 </div>
 
@@ -2635,7 +2702,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (1.17s) - chromium
+                                        passed (2.52s) - chromium
                                     </span>
                                 </div>
 
@@ -2646,7 +2713,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (0.77s) - chromium
+                                        passed (1.49s) - chromium
                                     </span>
                                 </div>
 
@@ -2697,7 +2764,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 30.1s
+                                <strong>Total Duration:</strong> 35.3s
                             </div>
 
                             <div class="suite-list">
@@ -2709,56 +2776,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.81s) - chromium
+                                        passed (2.96s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.61s) - chromium
+                                        passed (1.84s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (3.08s) - chromium
+                                        passed (3.26s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (2.65s) - chromium
+                                        passed (2.63s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.61s) - chromium
+                                        passed (1.87s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (1.88s) - chromium
+                                        passed (2.38s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (1.55s) - chromium
+                                        passed (2.12s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.82s) - chromium
+                                        passed (2.09s) - chromium
                                     </span>
                                 </div>
 
@@ -2769,28 +2836,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.44s) - chromium
+                                        passed (1.70s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.48s) - chromium
+                                        passed (1.81s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.56s) - chromium
+                                        passed (1.90s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.69s) - chromium
+                                        passed (1.89s) - chromium
                                     </span>
                                 </div>
 
@@ -2801,7 +2868,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (1.07s) - chromium
+                                        passed (1.34s) - chromium
                                     </span>
                                 </div>
 
@@ -2812,7 +2879,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (3.15s) - chromium
+                                        passed (3.41s) - chromium
                                     </span>
                                 </div>
 
@@ -2823,7 +2890,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (1.54s) - chromium
+                                        passed (1.92s) - chromium
                                     </span>
                                 </div>
 
@@ -2834,7 +2901,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (1.00s) - chromium
+                                        passed (1.20s) - chromium
                                     </span>
                                 </div>
 
@@ -2885,7 +2952,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 36.1s
+                                <strong>Total Duration:</strong> 23.7s
                             </div>
 
                             <div class="suite-list">
@@ -2897,56 +2964,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (2.11s) - chromium
+                                        passed (1.27s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.92s) - chromium
+                                        passed (1.08s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (3.35s) - chromium
+                                        passed (1.65s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (2.99s) - chromium
+                                        passed (1.80s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.87s) - chromium
+                                        passed (0.98s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (2.54s) - chromium
+                                        passed (1.29s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (2.17s) - chromium
+                                        passed (0.91s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (2.16s) - chromium
+                                        passed (0.97s) - chromium
                                     </span>
                                 </div>
 
@@ -2957,28 +3024,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.62s) - chromium
+                                        passed (0.91s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.78s) - chromium
+                                        passed (1.08s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (2.01s) - chromium
+                                        passed (1.10s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (2.01s) - chromium
+                                        passed (0.96s) - chromium
                                     </span>
                                 </div>
 
@@ -2989,7 +3056,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (1.68s) - chromium
+                                        passed (0.77s) - chromium
                                     </span>
                                 </div>
 
@@ -3000,7 +3067,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (3.61s) - chromium
+                                        passed (2.23s) - chromium
                                     </span>
                                 </div>
 
@@ -3011,7 +3078,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (1.87s) - chromium
+                                        passed (0.91s) - chromium
                                     </span>
                                 </div>
 
@@ -3022,7 +3089,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (1.23s) - chromium
+                                        passed (4.80s) - chromium
                                     </span>
                                 </div>
 
@@ -3073,7 +3140,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 24.3s
+                                <strong>Total Duration:</strong> 37.4s
                             </div>
 
                             <div class="suite-list">
@@ -3085,56 +3152,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.61s) - chromium
+                                        passed (2.06s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.35s) - chromium
+                                        passed (2.40s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (2.35s) - chromium
+                                        passed (3.36s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (2.09s) - chromium
+                                        passed (2.74s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.37s) - chromium
+                                        passed (1.96s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (1.56s) - chromium
+                                        passed (2.37s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (1.27s) - chromium
+                                        passed (2.25s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.13s) - chromium
+                                        passed (2.15s) - chromium
                                     </span>
                                 </div>
 
@@ -3145,28 +3212,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.01s) - chromium
+                                        passed (2.54s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.31s) - chromium
+                                        passed (1.94s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.33s) - chromium
+                                        passed (2.47s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.39s) - chromium
+                                        passed (1.94s) - chromium
                                     </span>
                                 </div>
 
@@ -3177,7 +3244,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (0.93s) - chromium
+                                        passed (1.62s) - chromium
                                     </span>
                                 </div>
 
@@ -3188,7 +3255,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (2.56s) - chromium
+                                        passed (3.45s) - chromium
                                     </span>
                                 </div>
 
@@ -3199,7 +3266,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (1.12s) - chromium
+                                        passed (1.91s) - chromium
                                     </span>
                                 </div>
 
@@ -3210,7 +3277,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (0.74s) - chromium
+                                        passed (1.31s) - chromium
                                     </span>
                                 </div>
 
@@ -3261,7 +3328,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 20.0s
+                                <strong>Total Duration:</strong> 25.9s
                             </div>
 
                             <div class="suite-list">
@@ -3273,56 +3340,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.30s) - chromium
+                                        passed (1.58s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (0.96s) - chromium
+                                        passed (1.40s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (1.68s) - chromium
+                                        passed (2.46s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (1.80s) - chromium
+                                        passed (2.19s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.60s) - chromium
+                                        passed (1.51s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (1.22s) - chromium
+                                        passed (1.47s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (0.84s) - chromium
+                                        passed (1.26s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (0.86s) - chromium
+                                        passed (1.31s) - chromium
                                     </span>
                                 </div>
 
@@ -3333,28 +3400,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (0.82s) - chromium
+                                        passed (1.26s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.07s) - chromium
+                                        passed (1.47s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (0.98s) - chromium
+                                        passed (1.46s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.09s) - chromium
+                                        passed (1.32s) - chromium
                                     </span>
                                 </div>
 
@@ -3365,7 +3432,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (0.61s) - chromium
+                                        passed (1.10s) - chromium
                                     </span>
                                 </div>
 
@@ -3376,7 +3443,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (2.12s) - chromium
+                                        passed (2.87s) - chromium
                                     </span>
                                 </div>
 
@@ -3387,7 +3454,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (1.20s) - chromium
+                                        passed (1.36s) - chromium
                                     </span>
                                 </div>
 
@@ -3398,7 +3465,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (0.60s) - chromium
+                                        passed (0.89s) - chromium
                                     </span>
                                 </div>
 
@@ -3449,7 +3516,7 @@
                             <h4>Test Details:</h4>
 
                             <div class="test-timing">
-                                <strong>Total Duration:</strong> 20.1s
+                                <strong>Total Duration:</strong> 30.0s
                             </div>
 
                             <div class="suite-list">
@@ -3461,56 +3528,56 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create group</span>
                                     <span class="suite-stats passed">
-                                        passed (1.38s) - chromium
+                                        passed (1.73s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Group specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.19s) - chromium
+                                        passed (1.40s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (1.80s) - chromium
+                                        passed (3.09s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Edit artifact metadata</span>
                                     <span class="suite-stats passed">
-                                        passed (1.78s) - chromium
+                                        passed (2.08s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Artifact specific rules</span>
                                     <span class="suite-stats passed">
-                                        passed (1.05s) - chromium
+                                        passed (1.51s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Create new version</span>
                                     <span class="suite-stats passed">
-                                        passed (1.22s) - chromium
+                                        passed (1.87s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete artifact</span>
                                     <span class="suite-stats passed">
-                                        passed (1.06s) - chromium
+                                        passed (1.78s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Explore - Delete group</span>
                                     <span class="suite-stats passed">
-                                        passed (0.81s) - chromium
+                                        passed (1.32s) - chromium
                                     </span>
                                 </div>
 
@@ -3521,28 +3588,28 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - List Rules</span>
                                     <span class="suite-stats passed">
-                                        passed (0.91s) - chromium
+                                        passed (1.31s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Validity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.02s) - chromium
+                                        passed (1.56s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Compatibility Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.21s) - chromium
+                                        passed (2.64s) - chromium
                                     </span>
                                 </div>
 
                                 <div class="suite-item">
                                     <span class="suite-name">Global Rules - Enable Integrity Rule</span>
                                     <span class="suite-stats passed">
-                                        passed (1.23s) - chromium
+                                        passed (1.57s) - chromium
                                     </span>
                                 </div>
 
@@ -3553,7 +3620,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Masthead - Logo verification</span>
                                     <span class="suite-stats passed">
-                                        passed (0.66s) - chromium
+                                        passed (1.18s) - chromium
                                     </span>
                                 </div>
 
@@ -3564,7 +3631,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Reference Graph - view mode toggle and graph view</span>
                                     <span class="suite-stats passed">
-                                        passed (2.07s) - chromium
+                                        passed (3.61s) - chromium
                                     </span>
                                 </div>
 
@@ -3575,7 +3642,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">Settings - Filter</span>
                                     <span class="suite-stats passed">
-                                        passed (1.01s) - chromium
+                                        passed (1.44s) - chromium
                                     </span>
                                 </div>
 
@@ -3586,7 +3653,7 @@
                                 <div class="suite-item">
                                     <span class="suite-name">App - Has Title</span>
                                     <span class="suite-stats passed">
-                                        passed (0.56s) - chromium
+                                        passed (0.95s) - chromium
                                     </span>
                                 </div>
 
@@ -3629,7 +3696,7 @@
                                 <span class="suite-name">registry-v2-authenticated</span>
                                 
                                 <div class="status-section">
-                                    <a href="os420_keycloak26_dastscan/dast-results/registry-v2-authenticated/ApicurioRegistry/DAST-20260521-135930-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
+                                    <a href="os420_keycloak26_dastscan/dast-results/registry-v2-authenticated/ApicurioRegistry/DAST-20260814-135715-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
                                     <span class="suite-stats">0 issues</span>
                                 </div>
                             </div>
@@ -3638,7 +3705,7 @@
                                 <span class="suite-name">registry-v3-authenticated</span>
                                 
                                 <div class="status-section">
-                                    <a href="os420_keycloak26_dastscan/dast-results/registry-v3-authenticated/ApicurioRegistry/DAST-20260521-135731-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
+                                    <a href="os420_keycloak26_dastscan/dast-results/registry-v3-authenticated/ApicurioRegistry/DAST-20260814-135427-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
                                     <span class="suite-stats">0 issues</span>
                                 </div>
                             </div>
@@ -3647,7 +3714,7 @@
                                 <span class="suite-name">ccompat-v7-authenticated</span>
                                 
                                 <div class="status-section">
-                                    <a href="os420_keycloak26_dastscan/dast-results/ccompat-v7-authenticated/ApicurioRegistry/DAST-20260521-140119-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
+                                    <a href="os420_keycloak26_dastscan/dast-results/ccompat-v7-authenticated/ApicurioRegistry/DAST-20260814-135912-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
                                     <span class="suite-stats">0 issues</span>
                                 </div>
                             </div>
@@ -3666,7 +3733,7 @@
                         <div class="job-content">
                             <div class="test-results">
                                 <div class="test-stat">
-                                    <div class="test-stat-number total">3</div>
+                                    <div class="test-stat-number total">1</div>
                                     <div class="test-stat-label">Scans Completed</div>
                                 </div>
                                 <div class="test-stat">
@@ -3679,28 +3746,10 @@
                             <h4>Scan Details:</h4>
 
                             <div class="suite-item">
-                                <span class="suite-name">registry-v2-unauthenticated</span>
-                                
-                                <div class="status-section">
-                                    <a href="os420_inmemory_dastscan/dast-results/registry-v2-unauthenticated/ApicurioRegistry/DAST-20260521-140633-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
-                                    <span class="suite-stats">0 issues</span>
-                                </div>
-                            </div>
-
-                            <div class="suite-item">
-                                <span class="suite-name">ccompat-v7-unauthenticated</span>
-                                
-                                <div class="status-section">
-                                    <a href="os420_inmemory_dastscan/dast-results/ccompat-v7-unauthenticated/ApicurioRegistry/DAST-20260521-140824-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
-                                    <span class="suite-stats">0 issues</span>
-                                </div>
-                            </div>
-
-                            <div class="suite-item">
                                 <span class="suite-name">registry-v3-unauthenticated</span>
                                 
                                 <div class="status-section">
-                                    <a href="os420_inmemory_dastscan/dast-results/registry-v3-unauthenticated/ApicurioRegistry/DAST-20260521-140406-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
+                                    <a href="os420_inmemory_dastscan/dast-results/registry-v3-unauthenticated/ApicurioRegistry/DAST-20260814-140434-RapiDAST-ApicurioRegistry/zap/zap-report.html" target="_blank" class="report-icon" title="View ZAP Security Report">🛡️</a>
                                     <span class="suite-stats">0 issues</span>
                                 </div>
                             </div>
@@ -3714,8 +3763,8 @@
         </div>
         
         <div class="footer">
-            <p>Generated on 2026-08-14 14:18:56 | 
-            Workflow Run ID: 26226671916 | 
+            <p>Generated on 2026-08-14 14:18:59 | 
+            Workflow Run ID: 31802037128 | 
             Total Jobs: 23</p>
         </div>
     </div>
